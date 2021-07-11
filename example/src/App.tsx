@@ -1,29 +1,11 @@
-
-# react-component-visible
-
-react-component-visible is a React library to handle conditional rendering very gracefully.
-
-## Installation
-
-Use the package manager [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) to install react-component-visible.
-
-```bash
-npm install react-component-visible
-```
-or
-```bash
-yarn install react-component-visible
-```
-
-## Usage
-
-```react-js
-import React from 'React';
+import React, { useState, useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 import Visible from "react-component-visible";
 
-const App = () => {
+function App() {
   const [isLoaded, setIsLoaded] = useState(false);
-  
+
   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(true);
@@ -53,7 +35,3 @@ const App = () => {
 }
 
 export default App;
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
